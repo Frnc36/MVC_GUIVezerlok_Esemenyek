@@ -1,5 +1,7 @@
 package app;
 
+import javax.swing.JCheckBox;
+
 public class NewJFrame extends javax.swing.JFrame {
 
     public NewJFrame() {
@@ -16,11 +18,6 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jCheckBox1.setText("jCheckBox1");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
 
         jLabel1.setText("jLabel1");
 
@@ -48,10 +45,10 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
+    public JCheckBox getChB() {
+        return jCheckBox1;
+    }
+    
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
