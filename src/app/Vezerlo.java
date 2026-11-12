@@ -22,7 +22,6 @@ public class Vezerlo {
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Kattintás!: actionPerformed");
                 nezet.megjelenit("Kattintás!: actionPerformed");
-
             }
         });
 
@@ -31,7 +30,7 @@ public class Vezerlo {
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
                     nezet.megjelenit("Kiválasztva");
-                }else{
+                } else {
                     nezet.megjelenit("Nincs Kiválasztva");
                 }
             }
@@ -41,7 +40,7 @@ public class Vezerlo {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                nezet.checkBoxAktiv();
+                chb.setSelected(!chb.isSelected());
             }
         });
 
