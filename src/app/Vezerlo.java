@@ -3,6 +3,7 @@ package app;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JCheckBox;
+import javax.swing.JTextField;
 
 public class Vezerlo {
 
@@ -10,12 +11,15 @@ public class Vezerlo {
 
     public Vezerlo(Nezet nezet) {
         this.nezet = nezet;
+        
+        JTextField txtF = nezet.getTxtF();
 
         JCheckBox chb = nezet.getChB();
         chb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("Kattintás!: actionPerformed");
+                //System.out.println("Kattintás!: actionPerformed");
+                txtF.setText("Kattintás!: actionPerformed");
             }
         });
 
