@@ -12,7 +12,12 @@ public class Vezerlo {
         this.nezet = nezet;
 
         JCheckBox chb = nezet.getChB();
-
+        chb.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+        });
 
     }
 
