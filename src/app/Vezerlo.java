@@ -2,6 +2,8 @@ package app;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.Action;
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JTextField;
 
@@ -18,6 +20,15 @@ public class Vezerlo {
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Kattintás!: actionPerformed");
                 nezet.megjelenit("Kattintás!: actionPerformed");
+
+            }
+        });
+
+        JButton btn = nezet.getBtn();
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                nezet.checkBoxAktiv();
             }
         });
 
