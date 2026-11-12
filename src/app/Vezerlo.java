@@ -11,15 +11,13 @@ public class Vezerlo {
 
     public Vezerlo(Nezet nezet) {
         this.nezet = nezet;
-        
-        JTextField txtF = nezet.getTxtF();
 
         JCheckBox chb = nezet.getChB();
         chb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Kattintás!: actionPerformed");
-                txtF.setText("Kattintás!: actionPerformed");
+                nezet.megjelenit("Kattintás!: actionPerformed");
             }
         });
 
