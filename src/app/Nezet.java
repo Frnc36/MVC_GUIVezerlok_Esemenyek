@@ -48,8 +48,7 @@ public class Nezet extends javax.swing.JFrame {
     public JCheckBox getChB() {
         return jCheckBox1;
     }
-    
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox jCheckBox1;
